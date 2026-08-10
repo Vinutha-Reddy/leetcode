@@ -4,6 +4,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Math
 |  |
 | ------- |
+| [0002-add-two-numbers](https://github.com/Vinutha-Reddy/leetcode/tree/master/0002-add-two-numbers) |
 | [1140-stone-game-ii](https://github.com/Vinutha-Reddy/leetcode/tree/master/1140-stone-game-ii) |
 | [1510-stone-game-iv](https://github.com/Vinutha-Reddy/leetcode/tree/master/1510-stone-game-iv) |
 | [3345-smallest-divisible-digit-product-i](https://github.com/Vinutha-Reddy/leetcode/tree/master/3345-smallest-divisible-digit-product-i) |
@@ -76,4 +77,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1510-stone-game-iv](https://github.com/Vinutha-Reddy/leetcode/tree/master/1510-stone-game-iv) |
+## Linked List
+|  |
+| ------- |
+| [0002-add-two-numbers](https://github.com/Vinutha-Reddy/leetcode/tree/master/0002-add-two-numbers) |
+## Recursion
+|  |
+| ------- |
+| [0002-add-two-numbers](https://github.com/Vinutha-Reddy/leetcode/tree/master/0002-add-two-numbers) |
 <!---LeetCode Topics End-->

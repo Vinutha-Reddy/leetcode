@@ -5,6 +5,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0002-add-two-numbers](https://github.com/Vinutha-Reddy/leetcode/tree/master/0002-add-two-numbers) |
+| [0007-reverse-integer](https://github.com/Vinutha-Reddy/leetcode/tree/master/0007-reverse-integer) |
 | [1140-stone-game-ii](https://github.com/Vinutha-Reddy/leetcode/tree/master/1140-stone-game-ii) |
 | [1510-stone-game-iv](https://github.com/Vinutha-Reddy/leetcode/tree/master/1510-stone-game-iv) |
 | [1563-stone-game-v](https://github.com/Vinutha-Reddy/leetcode/tree/master/1563-stone-game-v) |

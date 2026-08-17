@@ -7,6 +7,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0002-add-two-numbers](https://github.com/Vinutha-Reddy/leetcode/tree/master/0002-add-two-numbers) |
 | [1140-stone-game-ii](https://github.com/Vinutha-Reddy/leetcode/tree/master/1140-stone-game-ii) |
 | [1510-stone-game-iv](https://github.com/Vinutha-Reddy/leetcode/tree/master/1510-stone-game-iv) |
+| [1563-stone-game-v](https://github.com/Vinutha-Reddy/leetcode/tree/master/1563-stone-game-v) |
 | [2029-stone-game-ix](https://github.com/Vinutha-Reddy/leetcode/tree/master/2029-stone-game-ix) |
 | [3345-smallest-divisible-digit-product-i](https://github.com/Vinutha-Reddy/leetcode/tree/master/3345-smallest-divisible-digit-product-i) |
 | [3348-smallest-divisible-digit-product-ii](https://github.com/Vinutha-Reddy/leetcode/tree/master/3348-smallest-divisible-digit-product-ii) |
@@ -20,6 +21,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0001-two-sum](https://github.com/Vinutha-Reddy/leetcode/tree/master/0001-two-sum) |
 | [0004-median-of-two-sorted-arrays](https://github.com/Vinutha-Reddy/leetcode/tree/master/0004-median-of-two-sorted-arrays) |
 | [1140-stone-game-ii](https://github.com/Vinutha-Reddy/leetcode/tree/master/1140-stone-game-ii) |
+| [1563-stone-game-v](https://github.com/Vinutha-Reddy/leetcode/tree/master/1563-stone-game-v) |
 | [2029-stone-game-ix](https://github.com/Vinutha-Reddy/leetcode/tree/master/2029-stone-game-ix) |
 | [2213-longest-substring-of-one-repeating-character](https://github.com/Vinutha-Reddy/leetcode/tree/master/2213-longest-substring-of-one-repeating-character) |
 | [2958-length-of-longest-subarray-with-at-most-k-frequency](https://github.com/Vinutha-Reddy/leetcode/tree/master/2958-length-of-longest-subarray-with-at-most-k-frequency) |
@@ -61,6 +63,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0005-longest-palindromic-substring](https://github.com/Vinutha-Reddy/leetcode/tree/master/0005-longest-palindromic-substring) |
 | [1140-stone-game-ii](https://github.com/Vinutha-Reddy/leetcode/tree/master/1140-stone-game-ii) |
 | [1510-stone-game-iv](https://github.com/Vinutha-Reddy/leetcode/tree/master/1510-stone-game-iv) |
+| [1563-stone-game-v](https://github.com/Vinutha-Reddy/leetcode/tree/master/1563-stone-game-v) |
 | [3302-find-the-lexicographically-smallest-valid-sequence](https://github.com/Vinutha-Reddy/leetcode/tree/master/3302-find-the-lexicographically-smallest-valid-sequence) |
 ## Minimax
 |  |
@@ -77,6 +80,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [1140-stone-game-ii](https://github.com/Vinutha-Reddy/leetcode/tree/master/1140-stone-game-ii) |
 | [1510-stone-game-iv](https://github.com/Vinutha-Reddy/leetcode/tree/master/1510-stone-game-iv) |
+| [1563-stone-game-v](https://github.com/Vinutha-Reddy/leetcode/tree/master/1563-stone-game-v) |
 | [2029-stone-game-ix](https://github.com/Vinutha-Reddy/leetcode/tree/master/2029-stone-game-ix) |
 ## Zero-Sum Game
 |  |

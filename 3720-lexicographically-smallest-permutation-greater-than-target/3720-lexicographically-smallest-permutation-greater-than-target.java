@@ -1,142 +1,67 @@
 class Solution {
     public String lexGreaterPermutation(String s, String target) {
-        int n = s.length();
-        int[] freq = new int[26];
+        // "smallest" that is strictly greater than
+        // it means we match as far as we can
+        // then when we can't match anymore, we go up.
+        // after we go up on one, we do the rest by minimal lexicographical ordering.
 
-        for (char c : s.toCharArray()) {
-            freq[c - 'a']++;
+        // 1. Count characters in s
+        int[] sCount = new int[26];
+
+        for (int i = 0; i < s.length(); i++) {
+            sCount[s.charAt(i) - 'a']++;
         }
 
-        char[] result = new char[n];
-        int pos = 0;
+        // 2. Match as far as possible
+        // Think of count in s as your bank, then greedily pay out.
+        int startIndex = 0;
 
-        while (pos < n) {
-            char t = target.charAt(pos);
-            int tIdx = t - 'a';
+        while (startIndex < target.length()
+                && sCount[target.charAt(startIndex) - 'a'] > 0) {
 
-            // Try to keep target[pos] if available.
-            if (freq[tIdx] > 0) {
-                freq[tIdx]--;
+            sCount[target.charAt(startIndex) - 'a']--;
+            startIndex++;
+        }
 
-                if (canBeatSuffix(freq, target, pos + 1)) {
-                    result[pos] = t;
-                    pos++;
-                    continue;
-                }
+        // 3. Try to make the result lexicographically greater
+        for (int i = startIndex; i >= 0; i--) {
 
-                // Cannot beat suffix, backtrack this choice.
-                freq[tIdx]++;
+            if (i < startIndex) {
+                // Pay back the character
+                sCount[target.charAt(i) - 'a']++;
             }
 
-            // Try the smallest character strictly greater than target[pos].
-            int nextChar = -1;
+            if (i < s.length()) {
+                int targetChar = target.charAt(i) - 'a';
 
-            for (int c = tIdx + 1; c < 26; c++) {
-                if (freq[c] > 0) {
-                    nextChar = c;
-                    break;
-                }
-            }
+                // Find the smallest character greater than target[i]
+                for (int c = targetChar + 1; c < 26; c++) {
 
-            if (nextChar != -1) {
-                // Place this larger character.
-                freq[nextChar]--;
-                result[pos] = (char) ('a' + nextChar);
+                    if (sCount[c] > 0) {
+                        StringBuilder result = new StringBuilder();
 
-                // Fill the rest in ascending order.
-                int idx = pos + 1;
+                        // Keep the prefix unchanged
+                        result.append(target.substring(0, i));
 
-                for (int c = 0; c < 26; c++) {
-                    while (freq[c] > 0) {
-                        result[idx++] = (char) ('a' + c);
-                        freq[c]--;
+                        // Add the smallest character greater than target[i]
+                        result.append((char) (c + 'a'));
+                        sCount[c]--;
+
+                        // Arrange remaining characters in lexicographical order
+                        for (int j = 0; j < 26; j++) {
+                            while (sCount[j] > 0) {
+                                result.append((char) (j + 'a'));
+                                sCount[j]--;
+                            }
+                        }
+
+                        return result.toString();
                     }
                 }
-
-                return new String(result);
-            }
-
-            // No valid character at this position: backtrack.
-            if (pos == 0) {
-                return "";
-            }
-
-            // Undo the previous character and try a larger one there.
-            pos--;
-            char prev = result[pos];
-            freq[prev - 'a']++;
-        }
-
-        // We matched target exactly; need something strictly greater.
-        // Try to increase the last position.
-        char last = result[n - 1];
-        freq[last - 'a']++;
-
-        int nextChar = -1;
-
-        for (int c = (last - 'a') + 1; c < 26; c++) {
-            if (freq[c] > 0) {
-                nextChar = c;
-                break;
             }
         }
 
-        if (nextChar == -1) {
-            return "";
-        }
-
-        freq[nextChar]--;
-        result[n - 1] = (char) ('a' + nextChar);
-
-        int idx = n - 1;
-
-        for (int c = 0; c < 26; c++) {
-            while (freq[c] > 0) {
-                result[idx++] = (char) ('a' + c);
-                freq[c]--;
-            }
-        }
-
-        return new String(result);
-    }
-
-    // Check whether the remaining frequencies can form a suffix
-    // strictly greater than target[start..].
-    private boolean canBeatSuffix(int[] freq, String target, int start) {
-        int n = target.length();
-        int[] copy = freq.clone();
-
-        // Build the largest possible suffix from remaining chars.
-        StringBuilder largest = new StringBuilder();
-
-        for (int c = 25; c >= 0; c--) {
-            while (copy[c] > 0) {
-                largest.append((char) ('a' + c));
-                copy[c]--;
-            }
-        }
-
-        if (largest.length() < n - start) {
-            return false;
-        }
-
-        String suffix = largest.toString();
-
-        // Compare largest suffix with target[start..].
-        for (int i = 0; i < n - start; i++) {
-            char lc = suffix.charAt(i);
-            char tc = target.charAt(start + i);
-
-            if (lc > tc) {
-                return true;
-            }
-
-            if (lc < tc) {
-                return false;
-            }
-        }
-
-        // They are equal, so not strictly greater.
-        return false;
+        // No valid lexicographically greater permutation exists
+        return "";
     }
 }

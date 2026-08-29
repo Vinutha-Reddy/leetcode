@@ -28,6 +28,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0001-two-sum](https://github.com/Vinutha-Reddy/leetcode/tree/master/0001-two-sum) |
 | [0004-median-of-two-sorted-arrays](https://github.com/Vinutha-Reddy/leetcode/tree/master/0004-median-of-two-sorted-arrays) |
+| [0011-container-with-most-water](https://github.com/Vinutha-Reddy/leetcode/tree/master/0011-container-with-most-water) |
 | [1140-stone-game-ii](https://github.com/Vinutha-Reddy/leetcode/tree/master/1140-stone-game-ii) |
 | [1386-cinema-seat-allocation](https://github.com/Vinutha-Reddy/leetcode/tree/master/1386-cinema-seat-allocation) |
 | [1563-stone-game-v](https://github.com/Vinutha-Reddy/leetcode/tree/master/1563-stone-game-v) |
@@ -74,6 +75,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Greedy
 |  |
 | ------- |
+| [0011-container-with-most-water](https://github.com/Vinutha-Reddy/leetcode/tree/master/0011-container-with-most-water) |
 | [1386-cinema-seat-allocation](https://github.com/Vinutha-Reddy/leetcode/tree/master/1386-cinema-seat-allocation) |
 | [1927-sum-game](https://github.com/Vinutha-Reddy/leetcode/tree/master/1927-sum-game) |
 | [2029-stone-game-ix](https://github.com/Vinutha-Reddy/leetcode/tree/master/2029-stone-game-ix) |
@@ -127,6 +129,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0005-longest-palindromic-substring](https://github.com/Vinutha-Reddy/leetcode/tree/master/0005-longest-palindromic-substring) |
+| [0011-container-with-most-water](https://github.com/Vinutha-Reddy/leetcode/tree/master/0011-container-with-most-water) |
 | [3302-find-the-lexicographically-smallest-valid-sequence](https://github.com/Vinutha-Reddy/leetcode/tree/master/3302-find-the-lexicographically-smallest-valid-sequence) |
 | [3734-lexicographically-smallest-palindromic-permutation-greater-than-target](https://github.com/Vinutha-Reddy/leetcode/tree/master/3734-lexicographically-smallest-palindromic-permutation-greater-than-target) |
 ## Nim Game
